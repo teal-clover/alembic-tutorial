@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:16
+    container_name: tutorial_postgres
+    environment:
+      POSTGRES_USER: tutorial
+      POSTGRES_PASSWORD: tutorial
+      POSTGRES_DB: tutorial
+    ports:
+      - "5432:5432"
